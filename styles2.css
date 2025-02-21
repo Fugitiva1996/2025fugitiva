@@ -1,0 +1,72 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f8e8ff, #c6a0f6);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #6a0dad;
+    margin-bottom: 20px;
+}
+
+.news-item {
+    border-left: 5px solid #c6a0f6;
+    padding: 15px;
+    margin-bottom: 20px;
+    background: #f9f9f9;
+    transition: background 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.news-item:hover {
+    background: #e3d1f9;
+}
+
+.news-item h2 a {
+    text-decoration: none;
+    color: #6a0dad;
+    font-size: 22px;
+    transition: color 0.3s ease-in-out;
+}
+
+.news-item h2 a:hover {
+    color: #333;
+}
+
+.date {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.summary {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+.responsive-img {
+    width: 100%; /* Se ajusta al ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Ajusta cómo la imagen se recorta (opcional) */
+}
